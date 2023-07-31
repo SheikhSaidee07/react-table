@@ -27,16 +27,15 @@ export const BasicTable = () => {
     useSortBy
   );
   const handleChange = () => {
-    setNumber(parseInt(inputRef.current.value));
+    setNumber(+inputRef.current.value);
   };
   const firstPageRows = !number ? rows.slice(0, 10) : rows.slice(0, number);
 
   return (
     <>
       <div>
-        <h2>Please Enter the Number of Rows U want to show</h2>
         <div>
-          <label>Numner of Rows You want to show : </label>
+          <label>Number of Rows You want to show : </label>
           <input type="text" ref={inputRef} onChange={handleChange}></input>
         </div>
       </div>
@@ -56,8 +55,8 @@ export const BasicTable = () => {
       </div>
       <div>
         <p>
-          First Click on each Column if you want the table to be Sorted in
-          Ascending Or Desending
+          First Click on the Column which you want to be Sorted in either
+          Ascending Or Desending.
         </p>
       </div>
       <table {...getTableProps()}>

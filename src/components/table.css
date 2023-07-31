@@ -7,7 +7,7 @@ table {
 
 table td,
 table th {
-  border: 1px solid #ddd;
+  border: 1px solid #e8ffce;
   padding: 8px;
 }
 
@@ -16,7 +16,7 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-  background-color: #7c73c0;
+  background-color: #94add7;
 }
 
 table th {
@@ -31,15 +31,17 @@ input:checked {
   background-color: hsl(0, 0%, 40%);
   border-color: hsl(0, 0%, 40%);
 }
-
+.checkbox {
+  width: 100%;
+  color: #7c73c0;
+}
 .checkbox,
 .checkbox-content {
   padding: 1rem;
   font-family: "Edu SA Beginner", cursive;
   display: -webkit-inline-box;
   font-size: 1.3rem;
-  background-color: #04aa6d;
-  color: white;
+  background-color: #e8ffce;
   font-weight: 200;
 }
 input[type="text"] {
